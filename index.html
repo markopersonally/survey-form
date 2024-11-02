@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Platform Feedback Survey</h1>
+      <p id="description">
+        We appreciate your input to help enhance our community experience.
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="example@example.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number"
+            >Your Age <span class="clue">(Optional)</span></label
+          >
+          <input
+            type="number"
+            id="number"
+            name="age"
+            class="form-control"
+            placeholder="18-99"
+          />
+        </div>
+        <div class="form-group">
+          <p>Current Role</p>
+          <select id="role" name="role" class="form-control" required>
+            <option disabled selected value>Select your role</option>
+            <option value="student">Student</option>
+            <option value="job">Full-Time Employee</option>
+            <option value="learner">Full-Time Learner</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend our platform to a friend?</p>
+          <label
+            ><input type="radio" name="recommend" value="definitely" required />
+            Definitely</label
+          >
+          <label
+            ><input type="radio" name="recommend" value="maybe" /> Maybe</label
+          >
+          <label
+            ><input type="radio" name="recommend" value="not-sure" /> Not
+            Sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Favorite Feature</p>
+          <select
+            id="feature"
+            name="favoriteFeature"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="resources">Resources</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What could be improved?</p>
+          <label
+            ><input
+              type="checkbox"
+              name="improvement"
+              value="frontend-projects"
+            />
+            Frontend Projects</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="improvement"
+              value="backend-projects"
+            />
+            Backend Projects</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="improvement"
+              value="data-visualization"
+            />
+            Data Visualization</label
+          >
+          <label
+            ><input type="checkbox" name="improvement" value="community" />
+            Community Support</label
+          >
+          <label
+            ><input type="checkbox" name="improvement" value="resources" />
+            Educational Resources</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Additional Comments</p>
+          <textarea
+            id="comments"
+            name="comments"
+            class="input-textarea"
+            placeholder="Share your thoughts..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="submit-button">Submit Feedback</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
